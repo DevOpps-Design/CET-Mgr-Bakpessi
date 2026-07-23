@@ -1,0 +1,177 @@
+/* ============================================
+   ANIMATIONS - CETMB
+   ============================================ */
+
+/* ---------- KEYFRAMES ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInBlur {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* ---------- MICRO-INTERACTIONS ---------- */
+
+/* Btn press */
+.btn-press:active,
+.btn-cetmb-primary:active,
+.btn-cetmb-outline:active,
+.btn-primary:active,
+.btn-outline-primary:active {
+  transform: scale(0.97) !important;
+  transition-duration: var(--duration-instant) !important;
+}
+
+/* Base transition pour les boutons */
+.btn-cetmb-primary,
+.btn-cetmb-outline,
+.btn-cetmb-arrow,
+.btn-primary,
+.btn-outline-primary {
+  transition:
+    transform var(--duration-fast) var(--ease-out-strong),
+    background-color var(--duration-fast) var(--ease-out-strong),
+    border-color var(--duration-fast) var(--ease-out-strong),
+    color var(--duration-fast) var(--ease-out-strong),
+    box-shadow var(--duration-fast) var(--ease-out-strong);
+}
+
+.btn-cetmb-primary:hover,
+.btn-cetmb-outline:hover,
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Cartes */
+.card-cetmb {
+  transition:
+    transform var(--duration-normal) var(--ease-out-expo),
+    box-shadow var(--duration-normal) var(--ease-out-expo),
+    border-color var(--duration-normal) var(--ease-out-expo);
+}
+
+.card-cetmb:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
+}
+
+/* Liens */
+.nav-link {
+  transition:
+    transform var(--duration-fast) var(--ease-out-strong),
+    color var(--duration-fast) var(--ease-out-strong);
+}
+
+/* Champs de formulaire */
+.form-control {
+  transition:
+    border-color var(--duration-fast) var(--ease-out-strong),
+    box-shadow var(--duration-fast) var(--ease-out-strong);
+}
+
+.form-control:focus {
+  transform: none;
+}
+
+/* ---------- NAVBAR SCROLL EFFECT ---------- */
+.header-cetmb {
+  transition:
+    background-color var(--duration-normal) var(--ease-out-expo),
+    box-shadow var(--duration-normal) var(--ease-out-expo);
+}
+
+/* ---------- HERO CAROUSEL TRANSITION ---------- */
+.hero-carousel-img {
+  transition: opacity 0.8s var(--ease-out-expo);
+}
+
+/* ---------- ACCESSIBILITÉ ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .btn-cetmb-primary:hover,
+  .btn-cetmb-outline:hover,
+  .btn-primary:hover,
+  .btn-outline-primary:hover {
+    transform: none;
+  }
+
+  .card-cetmb:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}

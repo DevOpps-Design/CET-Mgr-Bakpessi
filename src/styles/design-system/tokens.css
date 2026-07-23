@@ -1,0 +1,73 @@
+/* ============================================
+   DESIGN TOKENS - CETMB
+   ============================================ */
+:root {
+  /* Palette couleurs */
+  --cetmb-primary: #176609;
+  --cetmb-primary-soft: #E0F0E0;
+  --cetmb-primary-dark: #145307;
+  --cetmb-accent: #a26c21;
+  --cetmb-accent-soft: rgba(162, 108, 33, 0.26);
+  --cetmb-bg: #FFFFFF;
+  --cetmb-surface: #F7F7F5;
+  --cetmb-border: #E0E0DD;
+  --cetmb-text: #1B1B1B;
+  --cetmb-text-muted: #5F5F5F;
+
+  /* Status colors */
+  --cetmb-success: #176609;
+  --cetmb-warning: #a26c21;
+  --cetmb-danger: #D64545;
+  --cetmb-info: #3A7BD5;
+
+  /* Focus ring */
+  --cetmb-focus-ring: rgba(23, 102, 9, 0.25);
+
+  /* Mapping Bootstrap */
+  --bs-primary: var(--cetmb-primary);
+  --bs-secondary: var(--cetmb-accent);
+  --bs-body-bg: var(--cetmb-bg);
+  --bs-body-color: var(--cetmb-text);
+  --bs-border-color: var(--cetmb-border);
+  --bs-success: var(--cetmb-success);
+  --bs-warning: var(--cetmb-warning);
+  --bs-danger: var(--cetmb-danger);
+
+  /* Typography */
+  --font-heading: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Spacing */
+  --section-py: 3rem;
+  --section-py-lg: 4.5rem;
+
+  /* Border radius */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-full: 0;
+  --radius-xs: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.06);
+
+  /* Easing curves - Emil Kowalski / custom */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  /* Transition durations */
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+
+  /* Focus ring width */
+  --focus-ring-width: 0.15rem;
+}

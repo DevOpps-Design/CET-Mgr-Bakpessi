@@ -1,0 +1,9 @@
+export { default as HeroSection } from './HeroSection';
+export { default as StatsSection } from './StatsSection';
+export { default as AboutSection } from './AboutSection';
+export { default as FilieresIntroSection } from './FilieresIntroSection';
+export { default as FilieresChoiceSection } from './FilieresChoiceSection';
+export { default as AtoutsSection } from './AtoutsSection';
+export { default as ActualitesSection } from './ActualitesSection';
+export { default as RecentBlogSection } from './RecentBlogSection';
+export { default as CtaSection } from './CtaSection';

@@ -1,0 +1,354 @@
+/* ============================================
+   COMPONENTS - CETMB
+   ============================================ */
+
+/* ---------- Boutons CETMB ---------- */
+
+/* Bouton Principal - Plein */
+.btn-cetmb-primary {
+  background-color: var(--cetmb-primary);
+  color: #FFFFFF;
+  border: 2px solid var(--cetmb-primary);
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.btn-cetmb-primary:hover {
+  background-color: var(--cetmb-primary-dark);
+  border-color: var(--cetmb-primary-dark);
+  color: #FFFFFF;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btn-cetmb-primary:active {
+  transform: scale(0.97) !important;
+}
+
+/* Bouton Secondaire - Outline */
+.btn-cetmb-outline {
+  background-color: transparent;
+  color: var(--cetmb-primary);
+  border: 2px solid var(--cetmb-primary);
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.btn-cetmb-outline:hover {
+  background-color: var(--cetmb-primary);
+  color: #FFFFFF;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btn-cetmb-outline:active {
+  transform: scale(0.97) !important;
+}
+
+/* Bouton Complémentaire - Texte avec flèche */
+.btn-cetmb-arrow {
+  background-color: transparent;
+  color: var(--cetmb-primary);
+  border: none;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-cetmb-arrow:hover {
+  color: var(--cetmb-primary-dark);
+  text-decoration: none;
+  gap: 0.75rem;
+}
+
+.btn-cetmb-arrow svg {
+  transition: transform var(--duration-fast) var(--ease-out-strong);
+}
+
+.btn-cetmb-arrow:hover svg {
+  transform: translateX(4px);
+}
+
+/* ---------- Legacy Buttons Override ---------- */
+.btn-primary {
+  background-color: var(--cetmb-primary);
+  border-color: var(--cetmb-primary);
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: var(--cetmb-primary-dark);
+  border-color: var(--cetmb-primary-dark);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: scale(0.97) !important;
+}
+
+.btn-outline-primary {
+  color: var(--cetmb-primary);
+  border-color: var(--cetmb-primary);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus-visible {
+  background-color: var(--cetmb-primary-soft);
+  border-color: var(--cetmb-primary);
+  color: var(--cetmb-primary);
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary:active {
+  transform: scale(0.97) !important;
+}
+
+.btn:focus-visible,
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.15rem var(--cetmb-focus-ring);
+}
+
+/* ---------- Cards ---------- */
+.card-cetmb {
+  background-color: var(--cetmb-bg);
+  border: 1px solid var(--cetmb-border);
+  padding: 1.5rem;
+}
+
+.card-cetmb:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Formulaires ---------- */
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--cetmb-text);
+}
+
+.form-control {
+  border-color: #D7D7D0;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  border-color: var(--cetmb-primary);
+  box-shadow: 0 0 0 0.15rem var(--cetmb-focus-ring);
+}
+
+.form-select {
+  border-color: #D7D7D0;
+}
+
+.form-text {
+  color: var(--cetmb-text-muted);
+}
+
+.invalid-feedback {
+  font-size: 0.8rem;
+}
+
+/* ---------- Icônes ---------- */
+[data-lucide] {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.8;
+  vertical-align: middle;
+}
+
+.icon-sm {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- CUSTOM UX ---------- */
+.bg-dark-elegant {
+  background-color: var(--cetmb-primary-dark);
+  background-image: radial-gradient(circle at top right, rgba(195,176,145,0.15) 0%, transparent 40%);
+}
+
+.letter-spacing-md { letter-spacing: 0.05em; }
+
+.btn-hover-scale { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.btn-hover-scale:hover { transform: translateY(-2px); }
+
+.lh-lg { line-height: 1.8 !important; }
+.fs-7 { font-size: 0.85rem; }
+
+/* ---------- HERO HOME PAGE - 100dvh ---------- */
+.hero-cetmb-home {
+  min-height: 100dvh;
+  box-sizing: border-box;
+  background-color: #F8F6F2;
+  padding-top: clamp(60px, calc(76px + 2rem), 120px);
+  margin-bottom: 0;
+}
+
+.hero-bg-pattern {
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-bg-image-wrapper {
+  z-index: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .hero-bg-image-wrapper {
+    width: 60%;
+  }
+}
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #F8F6F2 0%, rgba(248, 246, 242, 0.9) 15%, transparent 100%);
+}
+.hero-subtitle {
+  color: #176609;
+  font-size: 0.7rem;
+}
+.hero-title-main {
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800 !important;
+}
+@media (max-width: 767px) {
+  .hero-bg-gradient {
+    background: none;
+  }
+  .hero-carousel-img {
+    filter: brightness(0.6);
+  }
+  .hero-subtitle {
+    color: #ffffff;
+  }
+  .hero-title-main {
+    color: #ffffff;
+  }
+  .btn-cetmb-primary {
+    background-color: var(--cetmb-accent);
+    border-color: var(--cetmb-accent);
+    color: #ffffff;
+  }
+  .btn-cetmb-outline {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+}
+.hero-buttons-grid {
+  max-width: 500px;
+}
+@media (max-width: 767px) {
+  .hero-buttons-grid {
+    max-width: 100%;
+  }
+}
+.hero-dot {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s;
+}
+.hero-dot.active {
+  background-color: #ffffff;
+}
+
+.cat-box:hover {
+  transform: translateY(-4px);
+}
+
+/* ---------- STATS SECTION (deprecated styles removed) ---------- */
+
+/* ---------- ACTUALITES SECTION ---------- */
+.actu-number-outline {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 200;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--cetmb-primary);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+/* ---------- Content card with subtle inner highlight ---------- */
+.content-card {
+  background-color: #ffffff;
+  border: 1px solid var(--cetmb-border);
+  padding: 2.5rem;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .content-card {
+    background-color: var(--cetmb-primary);
+    padding: 1.5rem;
+  }
+  .content-card p {
+    color: #ffffff !important;
+  }
+}
+.content-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--cetmb-primary);
+}
+
+.content-card-accent::before {
+  background-color: var(--cetmb-accent);
+}
+
+/* ---------- ETABLISSEMENT PAGE SPECIFIC ---------- */
+.border-start {
+  border-left: 4px solid var(--cetmb-primary) !important;
+}
+
+/* ---------- CUSTOM BULLETS ---------- */
+.custom-bullet-list li {
+  line-height: 1.6;
+}

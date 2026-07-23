@@ -1,0 +1,81 @@
+/* ============================================
+   LAYOUT - CETMB
+   ============================================ */
+
+/* ---------- Header fixed ---------- */
+.header-cetmb {
+  transition:
+    background-color var(--duration-normal) var(--ease-out-expo),
+    backdrop-filter var(--duration-normal) var(--ease-out-expo);
+}
+
+/* ---------- Footer ---------- */
+.footer-cetmb {
+  background-color: var(--cetmb-primary);
+  color: #FFFFFF;
+  padding: clamp(2rem, 5vw, 3rem) 0 clamp(1rem, 3vw, 1.5rem);
+}
+
+.footer-cetmb a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out-strong);
+}
+
+.footer-cetmb a:not(.btn-social-footer):hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.footer-cetmb h5 {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Social icon buttons in footer */
+.btn-social-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  background-color: transparent;
+  transition:
+    transform var(--duration-fast) var(--ease-out-strong),
+    color var(--duration-fast) var(--ease-out-strong),
+    border-color var(--duration-fast) var(--ease-out-strong),
+    background-color var(--duration-fast) var(--ease-out-strong);
+  flex-shrink: 0;
+  text-decoration: none !important;
+}
+
+.btn-social-footer:hover {
+  transform: scale(1.12);
+  background-color: var(--cetmb-accent);
+  border-color: var(--cetmb-accent);
+  color: #176609 !important;
+  text-decoration: none !important;
+}
+
+.btn-social-footer:active {
+  transform: scale(0.95);
+}
+
+/* ---------- Section padding responsive ---------- */
+.section-padding {
+  padding-top: clamp(3rem, 8vw, 7rem);
+  padding-bottom: clamp(3rem, 8vw, 7rem);
+}
+
+/* ---------- Main ---------- */
+main {
+  min-height: calc(100dvh - 200px);
+}
+@media (max-width: 767px) {
+  main {
+    min-height: calc(100dvh - 160px);
+  }
+}

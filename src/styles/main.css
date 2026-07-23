@@ -1,0 +1,85 @@
+/* ============================================
+   MAIN STYLES - CETMB
+   Import du design system
+   ============================================ */
+@import './design-system/index.css';
+@import './utilities/index.css';
+
+/* Reset additionnel */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--cetmb-bg);
+  color: var(--cetmb-text);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Image responsive par défaut */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Padding top pour le fixed header - géré par les sections hero */
+
+/* Smooth section transitions */
+section {
+  position: relative;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--cetmb-primary);
+  color: #ffffff;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cetmb-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cetmb-primary-dark);
+}

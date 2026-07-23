@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cetmgr-bakpessi.vercel.app/sitemap.xml

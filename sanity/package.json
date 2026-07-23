@@ -1,0 +1,12 @@
+{
+  "name": "cetmb-sanity-studio",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev --port 3333",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "sanity": "^6.5.0"
+  }
+}

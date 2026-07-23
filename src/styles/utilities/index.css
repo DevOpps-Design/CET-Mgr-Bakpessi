@@ -1,0 +1,13 @@
+/* ============================================
+   UTILITIES - CETMB
+   ============================================ */
+
+.text-primary-cetmb { color: var(--cetmb-primary) !important; }
+.text-accent-cetmb { color: var(--cetmb-accent) !important; }
+
+.bg-primary-cetmb { background-color: var(--cetmb-primary) !important; }
+.bg-white { background-color: var(--cetmb-bg) !important; }
+
+.rounded-cetmb { border-radius: 0; }
+
+.opacity-75 { opacity: 0.75; }
